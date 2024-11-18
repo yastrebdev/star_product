@@ -260,7 +260,6 @@
     overflow: hidden;
     border-radius: 12px;
     opacity: .5;
-    background-image: url('/resource/img/acc_slide_1.png');
 }
 
 .cases__accordion_item.active {
