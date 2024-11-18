@@ -27,20 +27,20 @@ items.forEach((item, i) => {
         items.forEach((otherItem, otherIndex) => {
             if (otherItem === item) {
                 // Добавляем градиент для текущего активного элемента
-                otherItem.style.backgroundImage = `linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url('../resource/img/acc_slide_${otherIndex + 1}.png')`;
+                otherItem.style.backgroundImage = `linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url('/resource/img/acc_slide_${otherIndex + 1}.png')`;
             } else {
                 // Убираем градиент для остальных элементов
-                otherItem.style.backgroundImage = `url('../resource/img/acc_slide_${otherIndex + 1}.png')`;
+                otherItem.style.backgroundImage = `url('/resource/img/acc_slide_${otherIndex + 1}.png')`;
             }
         });
     });
 
     if (item.classList.contains('active')) {
         // Добавляем градиент для текущего активного элемента
-        item.style.backgroundImage = `linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url('../resource/img/acc_slide_${i + 1}.png')`;
+        item.style.backgroundImage = `linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url('/resource/img/acc_slide_${i + 1}.png')`;
     } else {
         // Убираем градиент для остальных
-        item.style.backgroundImage = `url('../resource/img/acc_slide_${i + 1}.png')`;
+        item.style.backgroundImage = `url('/resource/img/acc_slide_${i + 1}.png')`;
     }
 
     item.style.backgroundSize = 'cover';
