@@ -359,6 +359,147 @@
 
 
 
+.map {
+    background-color: #000000;
+}
+
+.map__wrapper {
+    height: 100%;
+    background-image: url('../resource/img/map.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+
+    padding: 112px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.map__header {
+    color: #ffffff;
+    display: flex;
+}
+
+.map__title {
+    margin-right: 118px;
+}
+
+.map__title > h2 {
+    max-width: 592px;
+}
+
+.map__header p {
+    max-width: 690px;
+    margin-top: 45px;
+    font-weight: 400;
+    color: #e0e0e0;
+    line-height: 30px;
+    letter-spacing: 3%;
+    font-size: 24px;
+}
+
+.map__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 81px;
+    column-gap: 20px;
+}
+
+.map__stats_item {
+    position: relative;
+}
+
+.map__stats_item:nth-child(-n+4)::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #999999;
+    position: absolute;
+    bottom: -40px;
+}
+
+.map__stats_item > h4 {
+    color: #ff4400;
+    margin-bottom: 16px;
+}
+
+.map__stats_item > span {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+
+
+.categories__wrapper {
+    height: 100%;
+    padding: 112px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.categories__header {
+    display: flex;
+}
+
+.categories__header p {
+    max-width: 690px;
+    margin-top: 45px;
+    font-weight: 400;
+    color: #666666;
+    line-height: 30px;
+    letter-spacing: 3%;
+    font-size: 24px;
+}
+
+.categories__title {
+    margin-right: 166px;
+}
+
+.categories__title > h2 {
+    max-width: 544px;
+}
+
+.categories__list {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0;
+    justify-content: center;
+    width: 100%;
+}
+
+.categories__item {
+    grid-column: span 1;
+    grid-row: 1;
+    width: 370px;
+    height: 370px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin-left: -198px;
+}
+
+.categories__item > h4 {
+    color: #ff4400;
+}
+
+.categories__item:nth-child(even) {
+    margin-top: 186px;
+}
+
+.categories__item:first-child {
+    margin-left: 0;
+}
+
+
 #section1 { 
     background-color: #ff6f61;
     display: flex;
