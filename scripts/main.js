@@ -1,7 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const navigations = document.querySelectorAll(".main_link")
     const sections = document.querySelectorAll("section");
     let currentSection = 0;
     let isScrolling = false;
+
+    navigations.forEach(link => {
+        link.addEventListener('click', e => {
+            cs = Number(e.target.dataset.cs)
+            currentSection = cs
+        })
+    })
 
     const scrollToSection = (index) => {
         if (index >= 0 && index < sections.length) {
