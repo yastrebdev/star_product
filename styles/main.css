@@ -648,6 +648,95 @@
 
 
 
+.comp {
+
+}
+
+.comp__wrapper {
+    padding: 112px 0;
+    height: 100%;
+}
+
+.comp__header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+}
+
+.comp__list {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.comp__item {
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: skewX(-15deg);
+    transform-origin: center;
+    overflow: hidden;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 112px;
+    opacity: .8;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.comp__item:hover {
+    transform: translateY(-5%);
+    z-index: 999;
+    opacity: 1;
+    -webkit-box-shadow: 40px 40px 40px 10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 40px 40px 40px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: 40px 40px 40px 10px rgba(34, 60, 80, 0.2);
+    transition: all ease-in-out 0.3s;
+}
+
+.comp__item:hover .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.ci1 {
+    background-image: url('../resource/img/comp1.png');
+}
+.ci2 {
+    background-image: url('../resource/img/comp2.png');
+}
+.ci3 {
+    background-image: url('../resource/img/comp3.png');
+}
+.ci4 {
+    background-image: url('../resource/img/comp4.png');
+}
+.ci5 {
+    background-image: url('../resource/img/comp5.png')
+}
+
+
+
 .stages {
     background-image: url('../resource/img/stages_bg.png');
     background-repeat: no-repeat;
